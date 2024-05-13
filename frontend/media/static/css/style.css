@@ -1,15 +1,29 @@
 body {
-    background: #62b468;
+    background: #BDBDBD;
     font-family: Arial, sans-serif;
 }
 
 header, footer {
-    background: #37863c;
-    border-radius: 30px;
+    background: #FF9800;
+    border-radius: 20px;
+}
+
+.img-ygl {
+   display: flex; /* Используем flexbox для выравнивания элементов */
+   align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.img-ygl img {
+   margin-right: 20px; /* Добавим небольшой отступ между изображением и текстом */
+   border-radius: 20px;
+   transform: scale(0.9);
 }
 
 .hapka-zagolovok, .text-opicanie {
-    text-align: center;
+   text-align: center;
+   display: flex; /* Используем flexbox для выравнивания элементов */
+   align-items: center; /* Выравниваем элементы по вертикали */
+   justify-content: center; /* Выравниваем элементы по горизонтали */
 }
 
 .time {
@@ -34,7 +48,7 @@ header, footer {
     border: 4px solid #4a90e2;
     background-color: white;
     padding: 10px;
-    margin: 20px 20px 40px 20px ;
+    margin: 20px 5px 0px 5px ;
     border-radius: 30px;
 }
 
@@ -321,3 +335,57 @@ header, footer {
     }
  }
  /* слайдер */
+
+/* обратная связь */
+.container {
+   display: flex;
+   justify-content: center;
+}
+
+.contact-form {
+   max-width: 500px; /* Установка максимальной ширины формы */
+   width: 100%;
+   margin: 0 auto; /* Центрирование формы */
+   padding: 20px;
+   border: 5px solid #ccc;
+   border-radius: 5px;
+   background-color: #ffdd54;
+   margin: 20px;
+   text-align: center;
+}
+
+.contact-form h2 {
+   text-align: center;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+button[type="submit"] {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button[type="submit"]:hover {
+   background-color: #0056b3;
+}
+/* обратная связь */
