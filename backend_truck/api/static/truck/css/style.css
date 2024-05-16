@@ -8,22 +8,39 @@ header, footer {
     border-radius: 20px;
 }
 
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
 .img-ygl {
-   display: flex; /* Используем flexbox для выравнивания элементов */
-   align-items: center; /* Выравниваем элементы по вертикали */
+   position: absolute;
+   left: 0;
+   display: flex;
+   align-items: center;
 }
 
 .img-ygl img {
-   margin-right: 20px; /* Добавим небольшой отступ между изображением и текстом */
+   margin-right: 20px;
    border-radius: 20px;
    transform: scale(0.9);
 }
 
+.zagolovok {
+   display: flex;
+   align-items: center;
+   font-size: 100px;
+   color: #5c3912;
+   
+}
+
 .hapka-zagolovok, .text-opicanie {
    text-align: center;
-   display: flex; /* Используем flexbox для выравнивания элементов */
-   align-items: center; /* Выравниваем элементы по вертикали */
-   justify-content: center; /* Выравниваем элементы по горизонтали */
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .time {
